@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.americanfootball.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:background="@drawable/a">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <LinearLayout style="@style/scoreLinearLayout">
+
+                <TextView
+                    style="@style/teamLabels"
+                    android:text="Team A" />
+
+                <TextView
+                    android:id="@+id/teamAScore"
+                    style="@style/scoreLabel" />
+
+                <Button
+                    style="@style/teamScoreButtons"
+                    android:onClick="addTeamATouchdownPoints"
+                    android:text="@string/touchdownButtonLabel" />
+
+                <Button
+                    style="@style/teamScoreButtons"
+                    android:onClick="addTeamAFieldGoalPoints"
+                    android:text="@string/fieldGoalButtonLabel" />
+
+                <Button
+                    style="@style/teamScoreButtons"
+                    android:onClick="addTeamAPAT2Points"
+                    android:text="@string/pat2ButtonLabel" />
+
+                <Button
+                    style="@style/teamScoreButtons"
+                    android:onClick="addTeamAPAT1Point"
+                    android:text="@string/pat1ButtonLabel" />
+
+                <Button
+                    style="@style/teamScoreButtons"
+                    android:onClick="addTeamASafetyPoints"
+                    android:text="@string/safetyButtonLabel" />
+            </LinearLayout>
+
+            <View style="@style/partition" />
+
+            <LinearLayout style="@style/scoreLinearLayout">
+
+                <TextView
+                    style="@style/teamLabels"
+                    android:text="Team B" />
+
+                <TextView
+                    android:id="@+id/teamBScore"
+                    style="@style/scoreLabel" />
+
+                <Button
+                    style="@style/teamScoreButtons"
+                    android:onClick="addTeamBTouchdownPoints"
+                    android:text="@string/touchdownButtonLabel" />
+
+                <Button
+                    style="@style/teamScoreButtons"
+                    android:onClick="addTeamBFieldGoalPoints"
+                    android:text="@string/fieldGoalButtonLabel" />
+
+                <Button
+                    style="@style/teamScoreButtons"
+                    android:onClick="addTeamBPAT2Points"
+                    android:text="@string/pat2ButtonLabel" />
+
+                <Button
+                    style="@style/teamScoreButtons"
+                    android:onClick="addTeamBPAT1Point"
+                    android:text="@string/pat1ButtonLabel" />
+
+                <Button
+                    style="@style/teamScoreButtons"
+                    android:onClick="addTeamBSafetyPoints"
+                    android:text="@string/safetyButtonLabel" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button style="@style/resetButton" />
+    </RelativeLayout>
+</ScrollView>

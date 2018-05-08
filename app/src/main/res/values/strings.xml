@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">American Football</string>
+    <string name="teamALabel">Team A</string>
+    <string name="teamBLabel">Team B</string>
+
+    <string name="touchdownButtonLabel">Touchdown</string>
+    <string name="fieldGoalButtonLabel">Field Goal</string>
+    <string name="pat2ButtonLabel">PAT 2+</string>
+    <string name="pat1ButtonLabel">PAT 1+</string>
+    <string name="safetyButtonLabel">Safety</string>
+
+    <string name="resetButtonLabel">Reset Score</string>
+</resources>
